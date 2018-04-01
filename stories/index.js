@@ -34,7 +34,7 @@ storiesOf('Button', module)
   .addDecorator((storyFn, context) => withConsole()(storyFn)(context))
   .add('with ng-controller', () => (
     <AngularBootstrap
-      ng-controller="Ctrl as vm"
+      ngController="Ctrl as vm"
       template={`
         <button ng-click="vm.clickme()">Click Me! {{vm.firstName}}</button>
       `}

@@ -14,7 +14,7 @@ class AngularBootstrap extends Component {
   }
 
   render() {
-    const { template, 'ng-controller': ctrl } = this.props;
+    const { template, ngController: ctrl } = this.props;
     return (
       <div
         {...(ctrl ? { 'ng-controller': ctrl } : {})}
@@ -25,7 +25,7 @@ class AngularBootstrap extends Component {
 }
 
 AngularBootstrap.propTypes = {
-  'ng-controller': PropTypes.string,
+  ngController: PropTypes.string,
   template: PropTypes.string.isRequired,
   moduleToBootstrap: PropTypes.string.isRequired
 };
